@@ -118,6 +118,9 @@ namespace ScreenShoter
                     }
                     catch(Exception e)
                     {
+                        /**
+                         * В случае ошибки, выключаем скриншотер и показываем сообщение.
+                         */
                         off();
                         MessageBox.Show(e.Message, "Ошибка"); // TODO: вычленить ошибку записи из-за не хватки прав.
                     }
